@@ -1,0 +1,18 @@
+{
+  "name": "morpheus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"esbuild --bundle --platform=neutral --tree-shaking=false --outfile=build/index.js dist/index.js\"",
+    "build": "rm -rf dist && tsc && esbuild dist/index.js --platform=neutral --bundle --tree-shaking=false --outfile=build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "esbuild": "0.17.15"
+  }
+}
