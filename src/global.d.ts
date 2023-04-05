@@ -2927,10 +2927,13 @@ declare class Sketch {
 	glblendfunc(src_function: string, dst_function: string): void;
 	glclear(): void;
 	glclearcolor(red: number, green: number, blue: number, alpha: number): void;
+	glclearcolor(color: number[]): void;
 	glcleardepth(depth: number): void;
 	glclipplane(plane: number, coeff1: number, coeff2: number, coeff3: number, coeff4: number): void;
 	glcolor(red: number, green: number, blue: number, alpha: number): void;
+	glcolor(color: number[]): void;
 	glcolormask(red: number, green: number, blue: number, alpha: number): void;
+	glcolormask(color: number[]): void;
 	glcolormaterial(face: number, mode: any[]): void;
 	glcullface(face: number): void;
 	gldepthmask(on: number): void;	
